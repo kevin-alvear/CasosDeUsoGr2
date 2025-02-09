@@ -8,12 +8,12 @@ package vista;
  *
  * @author Mijael
  */
-public class JframeRegistro extends javax.swing.JFrame {
+public class JframeComprarBoleto extends javax.swing.JFrame {
 
     /**
      * Creates new form JframeRegistro
      */
-    public JframeRegistro() {
+    public JframeComprarBoleto() {
         initComponents();
     }
 
@@ -72,16 +72,16 @@ public class JframeRegistro extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Berlin Sans FB Demi", 1, 48)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Boleteria");
+        jLabel4.setText("Registro");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(178, 178, 178)
                 .addComponent(jLabel4)
-                .addGap(144, 144, 144))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -90,6 +90,8 @@ public class JframeRegistro extends javax.swing.JFrame {
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 47, Short.MAX_VALUE)
                 .addContainerGap())
         );
+
+        jLabel4.getAccessibleContext().setAccessibleName("Comprar Boleto");
 
         jLabel6.setFont(new java.awt.Font("Myanmar Text", 1, 18)); // NOI18N
         jLabel6.setText("Usuario");
@@ -196,20 +198,21 @@ public class JframeRegistro extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JframeRegistro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JframeComprarBoleto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JframeRegistro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JframeComprarBoleto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JframeRegistro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JframeComprarBoleto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JframeRegistro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JframeComprarBoleto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new JframeRegistro().setVisible(true);
+                new JframeComprarBoleto().setVisible(true);
             }
         });
     }
